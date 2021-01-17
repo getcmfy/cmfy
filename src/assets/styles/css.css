@@ -1,0 +1,13 @@
+body {
+  background: url('https://source.unsplash.com/collection/99956424/1024*768') no-repeat;
+  background-size: cover;
+  margin:0;
+}
+
+.blur{
+  background: rgba(0,0,0,0.6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+}

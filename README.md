@@ -1,5 +1,8 @@
-# Webpack 5 - React - Typescript Boilerplate Template
-## Based on [Athlon's Webpack 5 Boilerplate Template](https://github.com/WeAreAthlon/frontend-webpack-boilerplate)
+# COMFY - React Boilerplate Template
+Based on [Athlon's Webpack 5 Boilerplate Template](https://github.com/WeAreAthlon/frontend-webpack-boilerplate)
+
+Logo made using [Method Draw](http://github.com/duopixel/Method-Draw/)
+
 ![Maintenance](https://img.shields.io/maintenance/yes/2021?logo=github)
 ![webpack-current](https://img.shields.io/badge/webpack-v5.11.1-green?logo=webpack)
 ![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)

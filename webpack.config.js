@@ -1,11 +1,16 @@
 const path = require('path');
+const DefinePlugin = require('webpack').DefinePlugin;
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const Dotenv = require('dotenv-webpack');
+const dotenv = require('dotenv').config( {
+  path: path.join(__dirname, '.env')
+} );
+// const WebpackFavicons = require('webpack-favicons');
 
-const environment = require('./configuration/environment');
+const environment = require('./config/environment');
+
 
 module.exports = {
   entry: {
@@ -65,6 +70,12 @@ module.exports = {
     ],
   },
   plugins: [
+    new DefinePlugin( {
+      "process.env": dotenv.parsed,
+    } ),
+    // new WebpackFavicons({
+    //   src: path.resolve(environment.paths.source, 'assets/images/cmfy-logo.svg')
+    // }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
     }),
@@ -92,11 +103,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(environment.paths.public, 'index.html'),
-      title: 'Custom template',
+      title: `${process.env.TITLE}`,
       inject: 'body',
-    }),
-    new Dotenv({
-      safe: true
     }),
     new CleanWebpackPlugin({
       verbose: true,
