@@ -25,7 +25,7 @@ module.exports = {
     chunkFilename: '[id].[chunkhash].js'
   },
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ],
+    extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
   },
   module: {
     rules: [
@@ -34,14 +34,20 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
+        test: /\.json5$/i,
+        loader: 'json5-loader',
+        type: 'javascript/auto',
       },
       {
-        test: /\.js$/,
+        test: /\.(js|jsx|tsx|ts)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: [
+          'babel-loader',
+          {
+            loader: 'webpack-preprocessor-pug-tsx',
+            options: {},
+          },
+        ],
       },
       {
         test: /\.(png|gif|jpe?g)$/i,

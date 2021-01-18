@@ -1,0 +1,45 @@
+.logo {
+  height: 15rem;
+  background-color: rgba(255,255,255,0.5);
+  padding: .5rem;
+  margin: 3rem 0 .7rem;
+  box-shadow: 3px 3px 6px rgba(23, 8, 69, 0.4);
+}
+
+.title-bar {
+  background: rgba(255,255,255,0.6);
+  width: 100%;
+  margin-top: .5rem;
+  border-top: 1px solid rgba(23, 8, 69, 0.2);
+  border-bottom: 1px solid rgba(23, 8, 69, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #505050;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.title span {
+  color:#707070;
+  margin-left: .4rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.version {
+  font-size: .8rem;
+  font-weight: 600;
+  padding-bottom: .5rem;
+}
+
+.version span {
+  color: #ee3ac1;
+  margin-left: .4rem;
+}
