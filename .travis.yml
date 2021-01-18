@@ -5,11 +5,11 @@ node_js:
   - node
   - lts/*
 install:
-  - npm ci
+  - yarn install --frozen-lockfile
 script:
-  - npm run lint:sass
-  - npm run lint:js
-  - npm run production
+  - yarn lint:sass
+  - yarn run lint:js
+  - yarn run production
 deploy:
   strategy: git
   provider: pages
