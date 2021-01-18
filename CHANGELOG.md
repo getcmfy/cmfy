@@ -1,6 +1,13 @@
 # Change log
 
 ## [0.1.1](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v0.1.1)
+
 ### 18/01/2021
 
 Initial Release
+
+## [0.1.15](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases/tag/v0.1.5)
+
+### 19/01/2021
+
+Many updates.
