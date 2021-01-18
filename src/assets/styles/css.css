@@ -5,9 +5,14 @@ body {
 }
 
 .blur{
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.2);
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 20vh;
+  padding-top: 3rem;
+}
+
+.logo{
+  height:15rem;
+  box-shadow: 3px 3px 5px #170845;
 }

@@ -7,14 +7,16 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const dotenv = require('dotenv').config( {
   path: path.join(__dirname, '.env')
 } );
-// const WebpackFavicons = require('webpack-favicons');
-
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const environment = require('./config/environment');
 
 
 module.exports = {
   entry: {
     app: path.resolve(environment.paths.source, 'index.tsx'),
+  },
+  experiments: {
+    asset: true
   },
   output: {
     path: environment.paths.output,
@@ -42,20 +44,21 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(png|gif|jpe?g|svg)$/i,
+        test: /\.(png|gif|jpe?g)$/i,
         use: [
           {
             loader: 'url-loader',
             options: {
-              name: 'images/design/[name].[hash:6].[ext]',
-              publicPath: '../',
+              name: 'images/[name].[hash:6].[ext]',
+              publicPath: 'img/',
               limit: environment.limits.images,
+              esModule: false
             },
           },
         ],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
             loader: 'url-loader',
@@ -67,15 +70,20 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.svg$/,
+        type: 'asset',
+        use: 'svgo-loader'
+      },
     ],
   },
   plugins: [
     new DefinePlugin( {
       "process.env": dotenv.parsed,
     } ),
-    // new WebpackFavicons({
-    //   src: path.resolve(environment.paths.source, 'assets/images/cmfy-logo.svg')
-    // }),
+    new FaviconsWebpackPlugin({
+      logo: path.resolve(environment.paths.source, 'assets/images/cmfy.svg')
+    }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
     }),
