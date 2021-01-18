@@ -5,15 +5,13 @@ node_js:
   - node
   - lts/*
 install:
-  - yarn install --frozen-lockfile
+  - yarn
 script:
-  - yarn lint:sass
-  - yarn run lint:js
-  - yarn run production
+  - yarn production
 deploy:
   strategy: git
   provider: pages
-  skip_cleanup: true
+  cleanup: true
   token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   local_dir: dist

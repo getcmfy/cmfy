@@ -13,7 +13,7 @@
   height: 15rem;
   background-color: rgba(255,255,255,0.4);
   padding: .7rem;
-  margin: 3rem 0 .7rem;
+  margin: 1.2rem 0 .7rem;
   box-shadow: 3px 3px 6px rgba(23, 8, 69, 0.4);
 }
 
@@ -40,8 +40,9 @@
 .title span {
   color:#707070;
   margin-left: .4rem;
+  padding-top: .1rem;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .version {

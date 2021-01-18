@@ -1,8 +1,8 @@
 {
   "author": "SQOOD <hello@sqood.id> (https://www.sqood.id)",
   "name": "@sqood/cmfy",
-  "version": "0.1.1",
-  "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
+  "version": "0.1.5",
+  "description": "React Webpack Typescript Boilerplate.",
   "homepage": "https://github.com/SQOOD/cmfy#readme",
   "browserslist": [
     "last 2 versions",
