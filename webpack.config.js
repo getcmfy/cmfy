@@ -8,8 +8,7 @@ const dotenv = require('dotenv').config( {
   path: path.join(__dirname, '.env')
 } );
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-const environment = require('./config/environment');
-
+const environment = require('./config/webpack/environment');
 
 module.exports = {
   entry: {
@@ -86,10 +85,8 @@ module.exports = {
   plugins: [
     new DefinePlugin( {
       "process.env": dotenv.parsed,
+      VERSION: JSON.stringify(require('./package.json').version)
     } ),
-    new FaviconsWebpackPlugin({
-      logo: path.resolve(environment.paths.source, 'assets/images/cmfy.svg')
-    }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
     }),
@@ -118,7 +115,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(environment.paths.public, 'index.html'),
       title: `${process.env.TITLE}`,
+      desc: `${process.env.DESC}`,
       inject: 'body',
+    }),
+    new FaviconsWebpackPlugin({
+      logo: path.resolve(environment.paths.source, 'assets/images/cmfy.svg'),
+      cache:true,
+      inject:true,
     }),
     new CleanWebpackPlugin({
       verbose: true,

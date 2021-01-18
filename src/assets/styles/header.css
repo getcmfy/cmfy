@@ -1,7 +1,18 @@
+.blur {
+  background: 
+    linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.5)),
+    url('https://source.unsplash.com/collection/99956424/1024*768') no-repeat top center,
+    #808080;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .logo {
   height: 15rem;
-  background-color: rgba(255,255,255,0.5);
-  padding: .5rem;
+  background-color: rgba(255,255,255,0.4);
+  padding: .7rem;
   margin: 3rem 0 .7rem;
   box-shadow: 3px 3px 6px rgba(23, 8, 69, 0.4);
 }

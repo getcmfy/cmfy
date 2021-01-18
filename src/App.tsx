@@ -1,10 +1,8 @@
 import React from 'react';
-import './assets/styles/css.css';
-import {version} from '../package.json';
 
 interface AppProps {}
 
-const App: AppProps = () => {
+const App = ( {}: AppProps ) => {
 
   return pug`
     .blur
@@ -16,7 +14,7 @@ const App: AppProps = () => {
         .title C Module Federation Y
           span /ˈkəmfē/
         .version Current Version :
-          span #{version}
+          span #{VERSION}
   `;
 }
 

@@ -1,13 +1,14 @@
 const path = require('path');
+const version = require('../../package.json')
 
 module.exports = {
   paths: {
     /* Path to source files directory */
-    source: path.resolve(__dirname, '../src/'),
+    source: path.resolve(__dirname, '../../src/'),
     /* Path to source files directory */
-    public: path.resolve(__dirname, '../public/'),
+    public: path.resolve(__dirname, '../../public/'),
     /* Path to built files directory */
-    output: path.resolve(__dirname, '../dist/'),
+    output: path.resolve(__dirname, '../../dist/'),
   },
   server: {
     host: 'localhost',
