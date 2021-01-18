@@ -7,7 +7,7 @@ const Header = ( {}: Props ) => {
   return pug`
     .blur
       img.logo(
-        src=require('./assets/images/cmfy.svg')
+        src=require('../assets/images/cmfy.svg')
         alt="CMFY - React Webpack Typescript Boilerplate"
       )
       .title-bar
