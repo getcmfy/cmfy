@@ -10,27 +10,29 @@ Based on [Athlon's Webpack 5 Boilerplate Template](https://github.com/WeAreAthlo
 
 > CMFY is still pre-production, means it's highly not recommended to use it on production apps. However - since it's just a boilerplate - it's not a huge issue if you want to use it.
 
-## Quick Start
-
-### Requirements
+## Requirements
 
 Minimum Requirements :
 
-NodeJS 12.x
-NPM 6.x / Yarn 1.x
-degit by [Rich Harris](https://twitter.com/rich_harris) ( for installation, see [degit](https://github.com/Rich-Harris/degit))
+- NodeJS 12.x
+- NPM 6.x / Yarn 1.x
 
 Recommended Requirements :
 
-NodeJS 14.x
-NPM 6.x / yarn 1.x
-degit by [Rich Harris](https://twitter.com/rich_harris) ( for installation, see [degit](https://github.com/Rich-Harris/degit))
+- NodeJS 14.x
+- NPM 6.x / yarn 1.x
+
+Optional ( but recommended ) :
+
+- degit by [Rich Harris](https://twitter.com/rich_harris) ( for installation, see [degit](https://github.com/Rich-Harris/degit))
+
+## Quick Start
 
 ### Download
 
 To Download, we recommend **degit** instead of normal `git clone` commands.
 
-`npx degit tsanyqudsi/cmfy my-app`
+`npx degit tsanyqudsi/cmfy my-app` ( Change my-app to whatever directory you want to use )
 
 We use `degit` because it's fast and we have [degit.json](https://github.com/tsanyqudsi/cmfy/blob/master/degit.json) that should delete most of "unneeded" files.
 
@@ -39,7 +41,7 @@ We use `degit` because it's fast and we have [degit.json](https://github.com/tsa
 ### Installation
 
 use `npm install` if you use npm,
-or use `yarn install` if you use yarn ( for installation, see [here](https://classic.yarnpkg.com/en/docs/install#debian-stable) not compatible yet with yarn 2 ).
+or use `yarn install` if you use yarn ( for installation, see [here](https://classic.yarnpkg.com/en/docs/install#debian-stable). Not compatible yet with **yarn 2** ).
 
 ### Running
 
