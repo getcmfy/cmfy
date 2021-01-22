@@ -8,6 +8,8 @@ Based on [Athlon's Webpack 5 Boilerplate Template](https://github.com/WeAreAthlo
 
 ![NodeJS CI](https://github.com/tsanyqudsi/cmfy/workflows/NodeJS%20CI/badge.svg)
 
+> CMFY is still pre-production, means it's highly not recommended to use it on production apps. However - since it's just a boilerplate - it's not a huge issue if you want to use it.
+
 ## Quick Start
 
 To Quick Start, we recommend **degit** instead of normal `git clone` commands. 

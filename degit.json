@@ -1,6 +1,6 @@
 [
   {
     "action": "remove",
-    "files": ["LICESE",".github","README.md", "degit.json"]
+    "files": ["LICENSE",".github","README.md", "degit.json"]
   }
 ]

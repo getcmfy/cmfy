@@ -2,7 +2,7 @@
 .env
 *.log
 *.lock
-
+.yarn
 # Mac OS X
 .DS_Store
 ._.*
