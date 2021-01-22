@@ -6,6 +6,8 @@ Based on [Athlon's Webpack 5 Boilerplate Template](https://github.com/WeAreAthlo
 
 ---
 
+![NodeJS CI](https://github.com/tsanyqudsi/cmfy/workflows/NodeJS%20CI/badge.svg)
+
 ## Quick Start
 
 To Quick Start, we recommend **degit** instead of normal `git clone` commands. 
