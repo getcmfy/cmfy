@@ -1,6 +1,8 @@
 import { render } from 'solid-js/web';
 import App from './App';
 
+import './assets/styles/index.css'
+
 const dispose = render(() => <App />, document.getElementById('root') as Node);
 
 /* HMR for SolidJS */
