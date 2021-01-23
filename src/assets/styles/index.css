@@ -4,6 +4,7 @@
 /*Parts*/
 @import url('header.css');
 @import url('content.css');
+@import url('footer.css');
 
 body {
   margin: 0;

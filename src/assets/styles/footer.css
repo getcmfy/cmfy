@@ -1,0 +1,31 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(23, 8, 69, 0.4);
+  font-family: 'Poppins', sans-serif;
+  color:#505050;
+  font-size: .95rem;
+  background-color: rgba(248, 182, 182,.25);
+}
+
+footer .footer {
+  padding: .5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a{
+  margin:0 .2rem;
+  text-decoration: none;
+  color:#d16073
+}
+
+footer img{
+  height: 1.5rem;
+}
+
+footer span{
+  font-size: .6rem;
+}
