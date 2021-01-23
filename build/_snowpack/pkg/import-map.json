@@ -1,7 +1,0 @@
-{
-  "imports": {
-    "solid-js": "./solid-js.js",
-    "solid-js/dom": "./solid-js/dom.js",
-    "solid-js/web": "./solid-js/web.js"
-  }
-}
