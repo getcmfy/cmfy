@@ -7,6 +7,24 @@ module.exports = {
     'public': '/',
     'src': '/dist',
   },
+  'plugins': [
+    '@snowpack/plugin-typescript',
+    '@snowpack/plugin-postcss',
+    '@snowpack/plugin-babel',
+    [
+      '@snowpack/plugin-dotenv',
+      {
+        'path':'./config/env'
+      }
+    ],
+    [
+      '@snowpack/plugin-optimize', 
+      {
+        'preloadModules':true,
+        'preloadCSS': true
+      }
+    ],
+  ],
   'buildOptions': {
     'clean': true,
   },
@@ -14,23 +32,6 @@ module.exports = {
     'secure': true,
     'port': 8000,
   },
-  'plugins': [
-      '@snowpack/plugin-typescript',
-      '@snowpack/plugin-babel',
-      [
-        '@snowpack/plugin-dotenv',
-        {
-          'path':'./config/env'
-        }
-      ],
-      [
-        '@snowpack/plugin-optimize', 
-        {
-          'preloadModules':true,
-          'preloadCSS': true
-        }
-      ]
-  ],
   'packageOptions': {
     'installTypes': true,
   },

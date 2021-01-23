@@ -6,7 +6,7 @@ const pkg = require('./package.json');
 process.env. SNOWPACK_PUBLIC_PACKAGE_VERSION = pkg.version;
 
 module.exports = {
-  'extends': './config/snowpack/default.js',
+  'extends': './config/snowpack/default.config.js',
   'alias':{
     '@app': './src',
     '@img': './src/assets/images',
