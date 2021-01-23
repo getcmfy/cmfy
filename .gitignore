@@ -3,6 +3,9 @@
 *.log
 *.lock
 .yarn
+*.crt
+*.key
+
 # Mac OS X
 .DS_Store
 ._.*

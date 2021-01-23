@@ -1,21 +1,16 @@
-import React from 'react';
+import type { Component } from 'solid-js';
 
-interface Props {}
+const Header: Component = () => {
 
-const Header = ( {}: Props ) => {
-
-  return pug`
-    .blur
-      img.logo(
-        src=require('../assets/images/cmfy.svg')
-        alt="CMFY - React Webpack Typescript Boilerplate"
-      )
-      .title-bar
-        .title C Module Federation Y
-          span /ˈkəmfē/
-        .version Current Version :
-          span #{VERSION}
-  `;
-}
+  return (
+    <div class="blur">
+        <img class="logo" alt="CMFY - React Webpack Typescript Boilerplate" />
+        <div class="title-bar">
+            <div class="title">C Module Federation Y<span>/ˈkəmfē/</span></div>
+            <div class="version">Current Version :<span></span></div>
+        </div>
+    </div>
+  );
+};
 
 export default Header;

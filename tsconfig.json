@@ -1,14 +1,27 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "esModuleInterop": true,
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": false,
-    "resolveJsonModule": true
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "error",
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    // Don"t change these unless you know what you"re doing.
+    // See: https://github.com/microsoft/TypeScript/issues/25430
+    "baseUrl": "./src",
+    "paths": {
+      "@app/*": ["./src/*"],
+      "@img/*": ["./src/assets/images/*"],
+      "@comp/*":["./src/components/*"],
+    },
   },
+  "include": ["src","config/types"],
   "exclude": ["node_modules"]
 }

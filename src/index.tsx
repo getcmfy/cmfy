@@ -1,12 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'solid-js/web';
 import App from './App';
 
-import './assets/styles/css.css';
+const dispose = render(() => <App />, document.getElementById('root') as Node);
 
-ReactDOM.render(
-  <React.StrictMode>
-      <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-);
+/* HMR for SolidJS */
+if (import.meta.env.MODE === 'development') {
+  import.meta.hot.accept();
+  import.meta.hot.dispose(dispose);
+}

@@ -1,13 +1,12 @@
-import React from 'react';
+import type { Component } from 'solid-js';
 
-interface Props {}
+const Content: Component = () => {
 
-const Content = ( {}: Props ) => {
-
-  return pug`
-    .test
-      p a
-  `;
-}
+  return (
+    <>
+      dsa
+    </>
+  );
+};
 
 export default Content;

@@ -1,15 +1,16 @@
-import React from 'react';
-import Header from './components/Header'
-import Content from './components/Content'
+import type { Component } from 'solid-js';
 
-interface AppProps {}
+import Header from './components/Header';
+import Content from './components/Content';
 
-const App = ( {}: AppProps ) => {
+const App: Component = () => {
 
-  return pug`
-    Header
-    Content
-  `;
-}
+  return (
+    <>
+      <Header/>
+      <Content/>
+    </>
+  );
+};
 
 export default App;
