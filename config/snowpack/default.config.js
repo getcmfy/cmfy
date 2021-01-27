@@ -9,7 +9,6 @@ module.exports = {
   },
   'plugins': [
     '@snowpack/plugin-typescript',
-    '@snowpack/plugin-postcss',
     '@snowpack/plugin-babel',
     [
       '@snowpack/plugin-dotenv',
@@ -17,6 +16,7 @@ module.exports = {
         'path':'./config/env'
       }
     ],
+    '@snowpack/plugin-postcss',
     [
       '@snowpack/plugin-optimize', 
       {

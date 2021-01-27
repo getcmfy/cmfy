@@ -1,7 +1,10 @@
-const postcssImport = require('postcss-import');
+/* PostCSS Config */
 
 module.exports = {
   plugins: [
-    postcssImport({ path: ['./src/assets/styles'] })
+    require('postcss-import')({ path: ['./src/assets/styles'] }),
+    require('cssnano')({
+      preset: 'default',
+  }),
   ],
 };
