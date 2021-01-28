@@ -1,4 +1,4 @@
-# CMFY (/ˈkəmfē/) - React Webpack Typescript Pug Babel Sass
+# CMFY (/ˈkəmfē/) - SolidJS Starter Kit
 
 ![logo]
 
