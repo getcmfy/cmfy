@@ -45,5 +45,9 @@ or use `yarn install` if you use yarn ( for installation, see [here](https://cla
 
 ### Running
 
-use `npm run dev` if you use npm,
+**During development** : use `npm run dev` if you use npm,
 or use `yarn dev` if you use yarn.
+
+**To build** : use `npm build` if you use npm, or use `yarn build` if you use yarn.
+
+**To check the production version** : use `npm start` if you use npm, or use `yarn start` if you use yarn.
