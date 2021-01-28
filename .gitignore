@@ -3,6 +3,9 @@
 *.log
 *.lock
 .yarn
+*.crt
+*.key
+
 # Mac OS X
 .DS_Store
 ._.*
@@ -21,3 +24,4 @@ Thumbs.db
 
 node_modules/
 dist/
+build/

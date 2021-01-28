@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="<%= htmlWebpackPlugin.options.desc %>" />
-    <title><%= htmlWebpackPlugin.options.title %> - v.<%= VERSION %></title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <!--Erase this part if you want to lose the sakura thing-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
+  <!-- --- --- --- --- --- --- --- --- --- --- --- --- ----->
+  <title>%SNOWPACK_PUBLIC_TITLE% - %SNOWPACK_PUBLIC_PACKAGE_VERSION%</title>
+</head>
+<body id='root'>
+  <!--Erase this part if you want to lose the sakura thing-->
+  <script> 
+    let sakura = new Sakura('body',{
+      fallSpeed: 3,
+      maxSize: 10,
+      minSize: 5
+    }); 
+  </script>
+  <!-- --- --- --- --- --- --- --- --- --- --- --- --- ----->
+  <script type="module" src="/dist/index.js"></script>
+</body>
 </html>

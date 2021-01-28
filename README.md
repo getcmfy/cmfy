@@ -36,7 +36,7 @@ To Download, we recommend **degit** instead of normal `git clone` commands.
 
 We use `degit` because it's fast and we have [degit.json](https://github.com/tsanyqudsi/cmfy/blob/master/degit.json) that should delete most of "unneeded" files.
 
-[logo]: https://repository-images.githubusercontent.com/329930205/6b82c280-5a05-11eb-87c4-5ad381df07e0 "CMFY Social Preview Header"
+[logo]: https://repository-images.githubusercontent.com/329930205/b1404780-61ca-11eb-893f-c3c8fb51629c "CMFY Social Preview Header"
 
 ### Installation
 

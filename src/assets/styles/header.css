@@ -15,6 +15,7 @@
   padding: .7rem;
   margin: 1.2rem 0 .7rem;
   box-shadow: 3px 3px 6px rgba(23, 8, 69, 0.4);
+  z-index: 9999;
 }
 
 .title-bar {

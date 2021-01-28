@@ -1,5 +1,10 @@
+/* PostCSS Config */
+
 module.exports = {
   plugins: [
-    require('autoprefixer'),
+    require('postcss-import')({ path: ['./src/assets/styles'] }),
+    require('cssnano')({
+      preset: 'default',
+  }),
   ],
 };
