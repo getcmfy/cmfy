@@ -32,7 +32,7 @@ Optional ( but recommended ) :
 
 To Download, we recommend **degit** instead of normal `git clone` commands.
 
-`npx degit tsanyqudsi/cmfy my-app` ( Change my-app to whatever directory you want to use )
+`npx degit getcmfy/cmfy my-app` ( Change my-app to whatever directory you want to use )
 
 We use `degit` because it's fast and we have [degit.json](https://github.com/tsanyqudsi/cmfy/blob/master/degit.json) that should delete most of "unneeded" files.
 
